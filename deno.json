@@ -1,0 +1,16 @@
+{
+  "lint": {
+    "files": {
+      "include": ["./src"],
+      "exclude": ["./vendor"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["./src"],
+      "exclude": ["./vendor"]
+    }
+  },
+  "importMap": "import_map.json"
+}
+

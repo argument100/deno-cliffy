@@ -1,9 +1,10 @@
 // main.ts
 import { Select } from "https://deno.land/x/cliffy/prompt/select.ts";
+import { colors } from "https://deno.land/x/cliffy/ansi/mod.ts";
 
 async function main() {
   const response = await Select.prompt({
-    message: "選択してください",
+    message: colors.bgRed.white.bold.underline("選択してください"),
     options: [
       { name: "Aについて", value: "a" },
       { name: "Bについて", value: "b" },
